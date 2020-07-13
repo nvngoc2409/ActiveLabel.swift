@@ -26,7 +26,7 @@ public enum TextReplacementType {
 public typealias ConfigureLinkAttribute = (ActiveType, [NSAttributedString.Key : Any], Bool) -> ([NSAttributedString.Key : Any])
 typealias ElementTuple = (range: NSRange, element: ActiveElement, type: ActiveType)
 
-@objc @IBDesignable open class ActiveLabel: UILabel {
+@objc open class ActiveLabel: UILabel {
     
     // MARK: - public properties
     @objc open weak var delegate: ActiveLabelDelegate?
